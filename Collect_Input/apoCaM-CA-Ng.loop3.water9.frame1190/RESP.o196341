@@ -1,0 +1,18 @@
+Running on host compute-1-14.local
+Time is Sat Dec 19 09:11:02 CST 2020
+Directory is /uhpc/cheung/pzhang5/SPQM_Ca/WholeLoops/Ca1.0-ML/QM/apoCaM-CA-Ng.loop3.water9.frame1190
+number of nodes used 1
+This jobs runs on the following processors:
+
+The following have been reloaded with a version change:
+  1) openmpi/4.0.1-intel => openmpi/1.10.7
+
+
+For atom[173]:Ca1, the best APS is not zero, bonds involved by this atom are frozen
+
+Info: the number of the ESP exceeds the MAXESP(20000),extend the size and reallocate the memory automatically
+Info: the number of the ESP exceeds the MAXESP(30000),extend the size and reallocate the memory automatically
+Info: the number of the ESP exceeds the MAXESP(40000),extend the size and reallocate the memory automatically
+
+
+

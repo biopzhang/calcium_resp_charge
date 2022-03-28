@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH -J RESP                  # Job Name
+#SBATCH -o RESP.o%j              # Output and error file name (%j expands to jobID)
+#SBATCH -n 1                     # Total number of mpi tasks requested
+#SBATCH -N 1
+#SBATCH -t 00:05:00              # Run time (hh:mm:ss) - 1.5 hours
+#SBATCH -p batch
+
+echo Running on host `hostname`
+echo Time is `date`
+echo Directory is `pwd`
+echo number of nodes used $SLURM_NNODES
+echo This jobs runs on the following processors:
+
+cd "$SLURM_SUBMIT_DIR"
+module load amber/12
+
+run=holoCaM.loop2.water1.frame19
+
+antechamber -i ${run}.log -fi gout -o ${run}.mol2 -fo mol2 -c resp -cf ${run}.resp.dat
