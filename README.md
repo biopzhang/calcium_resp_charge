@@ -9,4 +9,8 @@ The atomic charges of calcium in various protein environment in aqueous solution
 
 Open Babel: https://open-babel.readthedocs.io/en/latest/Installation/install.html
 
-VMD
+Gaussian09
+
+AMBERTOOLs 
+
+RESP and iRESP (provided by Piotr Cieplak)
